@@ -18,7 +18,7 @@
     transition: all .2s linear;
 }
 html{
-    font-size: 62.5%;
+    font-size: 50%;
     overflow-x: hidden;
     scroll-behavior: smooth;
     scroll-padding-top: 7rem;
@@ -49,7 +49,8 @@ section{
     margin-top: 1rem;
     display: inline-block;
     padding:.8rem 3rem;
-    font-size: 1.7rem;
+    font-size: 1.9rem;
+    font-weight: 100;
     border-radius: .5rem;
     border:.2rem solid var(--black);
     color:var(--black);
@@ -265,7 +266,7 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url(../image/cosmopen.png) no-repeat;
+    background: url(../image/banner1.png) no-repeat;
     background-position: center;
     background-size: cover;
     padding-top: 17rem;
@@ -301,7 +302,7 @@ section{
 
 .features .box-container .box{
     padding:3rem 2rem;
-    background: #fff;
+    background: #d1fbda;
     outline: var(--outline);
     outline-offset: -1rem;
     text-align: center;
@@ -339,7 +340,7 @@ section{
 }
 
 .products .product-slider .box{
-    background: #fff;
+    background: #d1fbda;
     border-radius: .5rem;
     text-align: center;
     padding:3rem 2rem;
@@ -607,7 +608,23 @@ section{
 .footer .credit span{
     color:var(--green);
 }
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem;
+}
 
+.container .container .row{
+    overflow: hidden;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    background-color: #fff;
+}
+ .container  img{
+    height: 326px;
+    width: 329px;
+    object-fit: cover;
+}
 
 
 
@@ -802,5 +819,6 @@ section{
     .footer .box-container .box .payment-img{
         margin: 2rem auto;
     }
+
 
 }
